@@ -25,7 +25,7 @@ const students = [
 // Raccogliamo in un array i nomi di tutti gli studenti
 // RISULTATO: ['Mario Rossi', 'Luigi Verdi', 'Marghertita Bianchi']
 
-let CompleteName = [];
+// let CompleteName = [];
 
 /* for (let i = 0; i < students.length; i++) {
   let studente = students[i];
@@ -36,9 +36,18 @@ let CompleteName = [];
 console.log(CompleteName);
 */
 
+/* let nomiCompleti = []
 students.forEach((studente) => {
   let CompleteName = studente.firstName + ' ' + studente.lastName;
   nomiCompleti.push(CompleteName);
+});
+
+console.log(nomiCompleti);
+*/
+
+
+const nomiCompleti = students.map((studente) => {
+  return `${studente.firstName} ${studente.lastName}`;
 });
 
 console.log(nomiCompleti);

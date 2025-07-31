@@ -36,3 +36,9 @@ let CompleteName = [];
 console.log(CompleteName);
 */
 
+students.forEach((studente) => {
+  let CompleteName = studente.firstName + ' ' + studente.lastName;
+  nomiCompleti.push(CompleteName);
+});
+
+console.log(nomiCompleti);

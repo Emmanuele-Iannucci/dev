@@ -18,9 +18,9 @@ nomi.forEach((nome, index, array) => {
 });
 */
 const students = [
-  { firstName: 'Mario', lastName: 'Rossi' },
-  { firstName: 'Luigi', lastName: 'Verdi' },
-  { firstName: 'Margherita', lastName: 'Bianchi' }
+    { firstName: 'Mario', lastName: 'Rossi' },
+    { firstName: 'Luigi', lastName: 'Verdi' },
+    { firstName: 'Margherita', lastName: 'Bianchi' }
 ];
 // Raccogliamo in un array i nomi di tutti gli studenti
 // RISULTATO: ['Mario Rossi', 'Luigi Verdi', 'Marghertita Bianchi']
@@ -46,8 +46,27 @@ console.log(nomiCompleti);
 */
 
 
+/*
 const nomiCompleti = students.map((studente) => {
   return `${studente.firstName} ${studente.lastName}`;
 });
 
 console.log(nomiCompleti);
+*/
+
+const students = [
+    { id: 1, name: 'Marco', year: 1 },
+    { id: 1, name: 'Silvia', year: 2 },
+    { id: 1, name: 'Ginevra', year: 1 }];
+
+// Prendiamo gli studenti al primo anno
+
+let studentiPrimoAnno = [];
+
+for (let i = 0; i < students.length; i++) {
+    if (students[i].year === 1) {
+        studentiPrimoAnno.push(students[i]);
+    }
+}
+
+console.log(studentiPrimoAnno);

@@ -94,8 +94,7 @@ const persone = [
 ];
 
 let personaTrovata = persone.find((person) => person.id === 3);
-
-console.log(personaTrovata);
+console.log(personaTrovata !== undefined); 
 
 
 

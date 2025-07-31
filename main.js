@@ -57,13 +57,15 @@ const nomiCompleti = students.map((studente) => {
 console.log(nomiCompleti);
 */
 
-const students = [
+/*const students = [
     { id: 1, name: 'Marco', year: 1 },
     { id: 1, name: 'Silvia', year: 2 },
     { id: 1, name: 'Ginevra', year: 1 }
 ];
-
+*/
 // Prendiamo gli studenti al primo anno
+
+/*
 
 let studentiPrimoAnno = [];
 
@@ -83,3 +85,25 @@ students.forEach((studente) => {
 
 console.log(studentiPrimoAnno);
 
+*/
+
+
+const persone = [
+    { id: 4, name: 'Paolo', age: 32 },
+    { id: 3, name: 'Clelia', age: 34 }
+];
+
+let personaTrovata = persone.find((person) => person.id === 3);
+
+console.log(personaTrovata);
+
+
+
+for (let i = 0; i < persone.length; i++) {
+    if (persone[i].id === 3) {
+        personaTrovata = persone[i];
+        break; // Interrompe il ciclo appena trova la persona
+    }
+}
+
+console.log(personaTrovata);
